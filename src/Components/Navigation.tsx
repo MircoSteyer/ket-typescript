@@ -13,6 +13,14 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         testText: {
             color: theme.palette.primary.main,
+        },
+        appBar: {
+            background: "transparent",
+            boxShadow: "none",
+        },
+        toolBar: {
+            display: "flex",
+            justifyContent: "flex-end"
         }
     }),
 )
@@ -38,12 +46,11 @@ const Navigation = () => {
     return (
         <React.Fragment>
             <HideOnScroll>
-                <AppBar position={"sticky"}>
-                    <Toolbar>
-                        <Typography variant="h4" align={"center"} className={classes.title}>
-                            Welcome to KET
-                        </Typography>
-                        <Button color="inherit">Login</Button>
+                <AppBar className={classes.appBar}>
+                    <Toolbar className={classes.toolBar}>
+                        <Button color="primary">CONTACT</Button>
+                        <Button color="primary">GALLERY</Button>
+                        <Button color="primary">ABOUT</Button>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>

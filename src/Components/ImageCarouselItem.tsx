@@ -4,7 +4,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import CardActions from "@material-ui/core/CardActions";
-import {Button, Hidden, Paper} from "@material-ui/core";
+import {Button, Hidden} from "@material-ui/core";
 import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
 import {AlbumCardContent} from "../Types";
 
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         cardContent: {
             position: 'absolute',
-            bottom: "30%",
+            bottom: "45%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             alignItems: "center",
@@ -68,12 +68,12 @@ const ImageCarouselItem: React.FC<CarouselItemProps> = ({card}) => {
                        image={card.media}
                        title="Image title"/>
             <CardContent className={classes.cardContent}>
-                <Hidden xsDown>
-                    <Typography gutterBottom variant="h5" component="h2" align={"center"}>
-                        {card.heading}
-                        TEST
-                        TEST
+                <Hidden smDown>
+                    <Typography gutterBottom variant="h2" component="h2" color={"primary"} align={"center"}>
+                        Welcome to KET
                     </Typography>
+                </Hidden>
+                <Hidden xsDown>
                     <Typography align={"center"}>
                         {card.description}
                     </Typography>

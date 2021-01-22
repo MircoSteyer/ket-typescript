@@ -9,7 +9,7 @@ type CarouselProps = {
 
 const ImageCarousel: React.FC<CarouselProps> = ({albumCards}) => {
     return (
-        <Carousel>
+        <Carousel autoPlay={false} indicators={false}>
             {
                 albumCards.map( (card, i) => <ImageCarouselItem key={i} card={card} /> )
             }
