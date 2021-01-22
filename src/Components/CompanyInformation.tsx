@@ -1,35 +1,36 @@
 import React from 'react';
 import ComponentHeader from "./ComponentHeader";
 import {createStyles, Grid, makeStyles, Theme, Typography} from "@material-ui/core";
+import logo from "../logo.jpg"
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
     root: {
+/*        border: "3px solid",*/
         margin: "0 auto",
         maxWidth: "1236px",
-        border: "3px solid",
-        padding: "96px 64px",
+        padding: "0px 64px 48px 64px",
         [theme.breakpoints.down("xs")]: {
-            padding: "48px 16px"
+            padding: "0px 16px 24px 16px"
         },
         [theme.breakpoints.up("sm")]: {
-            padding: "64px 64px"
+            padding: "0px 64px 32px 64px"
         },
         [theme.breakpoints.up("md")]: {
-            padding: "96px 64px"
+            padding: "0px 64px 48px 64px"
         }
     },
     columnGrid: {
-        border: "2px solid brown"
+/*        border: "2px solid brown"*/
     },
     insideGrid: {
-        border: "1px solid green",
+/*        border: "1px solid green",*/
         padding: 16
     },
     outerContainer: {
-        border: "3px dotted blue"
+/*        border: "3px dotted blue"*/
     },
     nestedContainerOutside: {
-        border: "2px solid salmon",
+/*        border: "2px solid salmon",*/
         padding: "8px 8px 8px 0px"
     },
     nestedContainerInside: {
@@ -94,16 +95,21 @@ const CompanyInformation = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid container xs={12} md={6} className={classes.columnGrid} direction={"column"} justify={"space-between"}>
+                    <Grid container xs={12} md={6} className={classes.columnGrid} direction={"column"} justify={"space-between"} >
                         <Grid item container className={classes.insideGrid}>
-                            <img src="static/images/logo.jpg" alt="There's supposed to be our logo here. Seems like that didn't work out as expected."/>
+                            {/*<img src={logo} alt="Test" height={"100%"} width={"100%"}/>*/}
+                            <img src="static/images/logo.jpg" height={"100%"} width={"100%"} alt="There's supposed to be our logo here. Seems like that didn't work out as expected."/>
                         </Grid>
                         <Grid item container className={classes.insideGrid}>
-                            2ND GRID
-                            <br/>
-                            2ND GRID
-                            <br/>
-                            2ND GRID
+                            <Typography color={"primary"} variant={"h3"} gutterBottom>
+                                A service that actually, truly satisfies.
+                            </Typography>
+                            <Typography variant={"h6"}>
+                                We pride ourself in actually doing some work instead of standing around all day.
+                            </Typography>
+                            <Typography variant={"h6"}>
+                                This year alone, we did some cool stuff. Truly amazing. Really good.
+                            </Typography>
                         </Grid>
                     </Grid>
                 </Grid>

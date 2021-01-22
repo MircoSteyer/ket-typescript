@@ -15,18 +15,18 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
         margin: 2
     },
     root: {
+/*        border: "3px solid",*/
         margin: "0 auto",
         maxWidth: "1236px",
-        border: "3px solid",
-        padding: "96px 64px",
+        padding: "0px 64px 48px 64px",
         [theme.breakpoints.down("xs")]: {
-            padding: "48px 16px"
+            padding: "0px 16px 24px 16px"
         },
         [theme.breakpoints.up("sm")]: {
-            padding: "64px 64px"
+            padding: "0px 64px 32px 64px"
         },
         [theme.breakpoints.up("md")]: {
-            padding: "96px 64px"
+            padding: "0px 64px 48px 64px"
         }
     }
 }))

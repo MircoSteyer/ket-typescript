@@ -73,14 +73,14 @@ const ImageCarouselItem: React.FC<CarouselItemProps> = ({card}) => {
                         Welcome to KET
                     </Typography>
                 </Hidden>
-                <Hidden xsDown>
+                {/*<Hidden xsDown>
                     <Typography align={"center"}>
                         {card.description}
                     </Typography>
-                </Hidden>
+                </Hidden>*/}
             </CardContent>
             <CardActions className={classes.cardActions}>
-                <Button>
+                <Button color={"primary"} variant={"outlined"}>
                     Contact
                 </Button>
             </CardActions>
