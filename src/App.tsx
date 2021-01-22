@@ -17,6 +17,7 @@ function App() {
           <Navigation/>
           <ImageCarousel albumCards={albumContents}/>
           <CompanyInformation/>
+          <Divider variant={"middle"}/>
           <CompanyFeatures/>
           <Divider variant={"middle"}/>
           <Album/>
