@@ -23,17 +23,17 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     insideGrid: {
         border: "1px solid green",
-        padding: "16px"
+        padding: 16
     },
     outerContainer: {
         border: "3px dotted blue"
     },
     nestedContainerOutside: {
         border: "2px solid salmon",
-        padding: "8px"
+        padding: "8px 8px 8px 0px"
     },
     nestedContainerInside: {
-        padding: 8
+        padding: "8px 8px 8px 0px"
     }
 }))
 
@@ -67,26 +67,36 @@ const CompanyInformation = () => {
                                 </Grid>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
                                     <Typography color={"primary"} variant={"h4"}>
-                                        45+
+                                        12+
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        Happy employees eating lunch every day.
+                                        12 + months is how many months a year has. Not eleven. Not even necessarily 12. No, it is 12 or more!
                                     </Typography>
                                 </Grid>
                             </Grid>
                             <Grid item container xs={6} className={classes.nestedContainerOutside}>
-                                <Grid item container>
-                                    2ND NESTED
+                                <Grid item container className={classes.nestedContainerInside} direction={"column"}>
+                                    <Typography color={"primary"} variant={"h4"}>
+                                        45+
+                                    </Typography>
+                                    <Typography color={"primary"}>
+                                        45 + Happy employees eating lunch every day.
+                                    </Typography>
                                 </Grid>
-                                <Grid item container>
-                                    2ND NESTED
+                                <Grid item container className={classes.nestedContainerInside} direction={"column"}>
+                                    <Typography color={"primary"} variant={"h4"}>
+                                        99%
+                                    </Typography>
+                                    <Typography color={"primary"}>
+                                        99% of our customers enjoyed our time together. But more than one house isn't very feasible.
+                                    </Typography>
                                 </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid container xs={12} md={6} className={classes.columnGrid} direction={"column"} justify={"space-between"}>
                         <Grid item container className={classes.insideGrid}>
-                            2ND GRID
+                            <img src="static/images/logo.jpg" alt="There's supposed to be our logo here. Seems like that didn't work out as expected."/>
                         </Grid>
                         <Grid item container className={classes.insideGrid}>
                             2ND GRID
