@@ -36,7 +36,7 @@ const CompanyFeatures = () => {
     return (
         <>
             <div className={classes.root}>
-                <ComponentHeader title={"Angebotsspektrum"}/>
+                <ComponentHeader title={"Angebot"}/>
                 <Grid container justify={"center"}>
                     <Grid container xs={12} sm={6} md={4} justify={"space-evenly"}>
                         <Grid item className={classes.box}>
