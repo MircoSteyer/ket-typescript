@@ -24,7 +24,7 @@ const Album = () => {
     return (
         <React.Fragment>
             <main>
-                <ComponentHeader title={"Gallery"}/>
+                <ComponentHeader title={"Gallerie"}/>
                 <Container className={classes.cardGrid} maxWidth="md">
                     <Grid container spacing={4}>
                         <AlbumCard albumContents={albumContents}/>

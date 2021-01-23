@@ -25,17 +25,17 @@ const Contact = () => {
 
     return (
         <>
-            <ComponentHeader title={"Contact"}/>
+            <ComponentHeader title={"Kontakt"}/>
             <Typography align={"center"} gutterBottom>
-                For inquiries, please contact us through one of the following channels.
+                Bei Rückfragen, können Sie uns gerne wie folgt kontaktieren.
                 <br/>
-                We are glad to be of service.
+                Wir freuen uns auf Ihre Anfrage.
             </Typography>
             <Grid container direction={"column"} alignItems={"center"}>
                 <Grid item className={classes.addressElement}>
                     <Typography align={"center"} variant={"h5"}>
                         <PinDropIcon />
-                        {" Address"}
+                        {" Adresse"}
                     </Typography>
                     <Typography>
                         Wonderway 17, 06682, Dinkelsheim
@@ -44,7 +44,7 @@ const Contact = () => {
                 <Grid item className={classes.addressElement}>
                     <Typography align={"center"} variant={"h5"}>
                         <PhoneIcon />
-                        {" Phone"}
+                        {" Telefon"}
                     </Typography>
                     <Typography>
                         +49 234 5678
@@ -56,7 +56,7 @@ const Contact = () => {
                         {" E-Mail"}
                     </Typography>
                     <Typography>
-                        mmymail@mail.com
+                        krassemail@mail.de
                     </Typography>
                 </Grid>
             </Grid>

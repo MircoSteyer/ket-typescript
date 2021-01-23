@@ -6,7 +6,7 @@ import ComponentHeader from "./ComponentHeader";
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
     box: {
-        height: 200,
+        height: 400,
         width: 250,
         display: "flex",
         flexDirection: "column",
@@ -36,7 +36,7 @@ const CompanyFeatures = () => {
     return (
         <>
             <div className={classes.root}>
-                <ComponentHeader title={"Features"}/>
+                <ComponentHeader title={"Angebotsspektrum"}/>
                 <Grid container justify={"center"}>
                     <Grid container xs={12} sm={6} md={4} justify={"space-evenly"}>
                         <Grid item className={classes.box}>
@@ -45,7 +45,9 @@ const CompanyFeatures = () => {
                                 Kanalbau
                             </Typography>
                             <Typography align={"center"}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, repudiandae.
+                                Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
+                                dass man sich kurz und prägnant auf die Kernangebote des Unternehmens fokussiert.
+                                Hier dann entsprechend vermutlich Kanal- Erd- und Tiefbau oder ein entsprechendes Angebot drum herum.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -56,7 +58,9 @@ const CompanyFeatures = () => {
                                 Erdbau
                             </Typography>
                             <Typography align={"center"}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, repudiandae.
+                                Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
+                                dass man sich kurz und prägnant auf die Kernangebote des Unternehmens fokussiert.
+                                Hier dann entsprechend vermutlich Kanal- Erd- und Tiefbau oder ein entsprechendes Angebot drum herum.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -67,7 +71,9 @@ const CompanyFeatures = () => {
                                 Tiefbau
                             </Typography>
                             <Typography align={"center"}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, repudiandae.
+                                Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
+                                dass man sich kurz und prägnant auf die Kernangebote des Unternehmens fokussiert.
+                                Hier dann entsprechend vermutlich Kanal- Erd- und Tiefbau oder ein entsprechendes Angebot drum herum.
                             </Typography>
                         </Grid>
                     </Grid>

@@ -70,18 +70,19 @@ const ImageCarouselItem: React.FC<CarouselItemProps> = ({card}) => {
             <CardContent className={classes.cardContent}>
                 <Hidden smDown>
                     <Typography gutterBottom variant="h2" component="h2" color={"primary"} align={"center"}>
-                        Welcome to KET
+                        Willkommen bei KET
                     </Typography>
                 </Hidden>
-                {/*<Hidden xsDown>
+                <Hidden xsDown>
                     <Typography align={"center"}>
-                        {card.description}
+                        {/*{card.description}*/}
+                        Die Bilder sind aktuell zufällig eingespielte Bilder. Es wird immer auf das selbe Bild wechseln. Wenn wir dann mal richtige Bilder einspielen, sollen es 6 Stück werden (selbe Bilder wie die 6 aus der Gallerie).
                     </Typography>
-                </Hidden>*/}
+                </Hidden>
             </CardContent>
             <CardActions className={classes.cardActions}>
                 <Button color={"primary"} variant={"outlined"}>
-                    Contact
+                    Kontakt
                 </Button>
             </CardActions>
         </Card>

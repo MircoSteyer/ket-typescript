@@ -44,16 +44,16 @@ const CompanyInformation = () => {
 
     return (
         <div>
-            <ComponentHeader title={"About Us"}/>
+            <ComponentHeader title={""}/>
             <div className={classes.root}>
                 <Grid container className={classes.outerContainer}>
                     <Grid container xs={12} md={6} className={classes.columnGrid} direction={"column"} justify={"space-between"}>
                         <Grid item container className={classes.insideGrid}>
                             <Typography color={"primary"} variant={"h3"} gutterBottom>
-                                Less code. More speed.
+                                Marketingspruch, warum wir cool sind.
                             </Typography>
                             <Typography variant={"h6"}>
-                                This page is a simple attempt at creating something myself and learning Material UI while doing so.
+                                Hier soll in einem oder maximal zwei Sätzen stehen, was uns besonders macht.
                             </Typography>
                         </Grid>
                         <Grid item container className={classes.insideGrid}>
@@ -63,7 +63,7 @@ const CompanyInformation = () => {
                                         300+
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        300+ years of development experience.
+                                        300 + Irgendetwas. Überlegt euch irgendwelche Kennzahlen, aber haltet den Text kurz.
                                     </Typography>
                                 </Grid>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
@@ -71,7 +71,7 @@ const CompanyInformation = () => {
                                         12+
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        12 + months is how many months a year has. Not eleven. Not even necessarily 12. No, it is 12 or more!
+                                        12 + Irgendetwas. Überlegt euch irgendwelche Kennzahlen, aber haltet den Text kurz.
                                     </Typography>
                                 </Grid>
                             </Grid>
@@ -81,7 +81,7 @@ const CompanyInformation = () => {
                                         45+
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        45 + Happy employees eating lunch every day.
+                                        45 + Irgendetwas. Überlegt euch irgendwelche Kennzahlen, aber haltet den Text kurz.
                                     </Typography>
                                 </Grid>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
@@ -89,7 +89,7 @@ const CompanyInformation = () => {
                                         99%
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        99% of our customers enjoyed our time together. But more than one house isn't very feasible.
+                                        99% Irgendetwas. Überlegt euch irgendwelche Kennzahlen, aber haltet den Text kurz.
                                     </Typography>
                                 </Grid>
                             </Grid>
@@ -98,17 +98,17 @@ const CompanyInformation = () => {
                     <Grid container xs={12} md={6} className={classes.columnGrid} direction={"column"} justify={"space-between"} >
                         <Grid item container className={classes.insideGrid}>
                             {/*<img src={logo} alt="Test" height={"100%"} width={"100%"}/>*/}
-                            <img src="static/images/logo.jpg" height={"100%"} width={"100%"} alt="There's supposed to be our logo here. Seems like that didn't work out as expected."/>
+                            <img src="static/images/logo.jpg" height={"100%"} width={"100%"} alt="Hier sollte eigentlich unser Logo stehen. Scheint, als wäre etwas schief gelaufen."/>
                         </Grid>
                         <Grid item container className={classes.insideGrid}>
                             <Typography color={"primary"} variant={"h3"} gutterBottom>
-                                A service that actually, truly satisfies.
+                                Nächster Marketingspruch. Vielleicht irgendetwas spezifisches.
                             </Typography>
                             <Typography variant={"h6"}>
-                                We pride ourself in actually doing some work instead of standing around all day.
+                                Hier könnt ihr ja rein schreiben, was für ne coole, kleine Firma ihr seid. Wie vertrauenswürdig und so ein Kram.
                             </Typography>
                             <Typography variant={"h6"}>
-                                This year alone, we did some cool stuff. Truly amazing. Really good.
+                                Vielleicht noch was cooles, warum der Kunde davon profitiert, zu uns zu kommen. Was weiß denn ich.
                             </Typography>
                         </Grid>
                     </Grid>

@@ -18,10 +18,10 @@ const Footer = () => {
     return (
         <footer className={classes.footer}>
             <Typography variant="h6" align="center" gutterBottom>
-                Footer
+                Fußzeile
             </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-                Something here to give the footer a purpose!
+                Hier würde vermutlich das Impressum landen, Copyright und keine Ahnung was noch.
             </Typography>
             <Copyright/>
         </footer>

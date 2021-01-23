@@ -48,9 +48,9 @@ const Navigation = () => {
             <HideOnScroll>
                 <AppBar className={classes.appBar}>
                     <Toolbar className={classes.toolBar}>
-                        <Button color="primary">CONTACT</Button>
-                        <Button color="primary">GALLERY</Button>
-                        <Button color="primary">ABOUT</Button>
+                        <Button color="primary">ÜBER UNS</Button>
+                        <Button color="primary">GALLERIE</Button>
+                        <Button color="primary">KONTAKT</Button>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>

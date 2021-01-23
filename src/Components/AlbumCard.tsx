@@ -57,7 +57,7 @@ const AlbumCard: React.FC<AlbumCardProps> = ({albumContents}) => {
                         </CardContent>
                         <CardActions className={classes.cardActions}>
                             <Button size="small" color="primary">
-                                View
+                                Ansehen
                             </Button>
                         </CardActions>
                     </Card>
