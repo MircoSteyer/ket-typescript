@@ -2,6 +2,8 @@ import React from 'react';
 import {makeStyles, createStyles, Theme} from "@material-ui/core/styles";
 import {Button, IconButton, Toolbar, Typography, AppBar, useScrollTrigger, Slide} from "@material-ui/core";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -48,9 +50,15 @@ const Navigation = () => {
             <HideOnScroll>
                 <AppBar className={classes.appBar}>
                     <Toolbar className={classes.toolBar}>
-                        <Button color="primary">ÜBER UNS</Button>
-                        <Button color="primary">GALLERIE</Button>
-                        <Button color="primary">KONTAKT</Button>
+                        <HashLink to={"#about"}>
+                            <Button color="primary">ÜBER UNS</Button>
+                        </HashLink>
+                        <HashLink to={"#gallery"}>
+                            <Button color="primary">GALLERIE</Button>
+                        </HashLink>
+                        <HashLink to={"#contact"}>
+                            <Button color="primary">KONTAKT</Button>
+                        </HashLink>
                     </Toolbar>
                 </AppBar>
             </HideOnScroll>

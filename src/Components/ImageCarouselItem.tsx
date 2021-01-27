@@ -7,6 +7,7 @@ import CardActions from "@material-ui/core/CardActions";
 import {Button, Hidden} from "@material-ui/core";
 import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
 import {AlbumCardContent} from "../Types";
+import {HashLink} from "react-router-hash-link";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -65,8 +66,7 @@ const ImageCarouselItem: React.FC<CarouselItemProps> = ({card}) => {
     return (
         <Card className={classes.card}>
             <CardMedia className={classes.cardMedia}
-                       image={card.media}
-                       title="Image title"/>
+                       image={card.media}/>
             <CardContent className={classes.cardContent}>
                 <Hidden smDown>
                     <Typography gutterBottom variant="h2" component="h2" color={"primary"} align={"center"}>
@@ -81,9 +81,11 @@ const ImageCarouselItem: React.FC<CarouselItemProps> = ({card}) => {
                 </Hidden>
             </CardContent>
             <CardActions className={classes.cardActions}>
-                <Button color={"primary"} variant={"outlined"}>
-                    Kontakt
-                </Button>
+                <HashLink to={"#contact"}>
+                    <Button color={"primary"} variant={"outlined"}>
+                        Kontakt
+                    </Button>
+                </HashLink>
             </CardActions>
         </Card>
 /*        <Card className={classes.card}>

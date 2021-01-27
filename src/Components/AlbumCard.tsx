@@ -55,11 +55,11 @@ const AlbumCard: React.FC<AlbumCardProps> = ({albumContents}) => {
                                 {card.description}
                             </Typography>
                         </CardContent>
-                        <CardActions className={classes.cardActions}>
+{/*                        <CardActions className={classes.cardActions}>
                             <Button size="small" color="primary">
                                 Ansehen
                             </Button>
-                        </CardActions>
+                        </CardActions>*/}
                     </Card>
                 </Grid>
             ))}

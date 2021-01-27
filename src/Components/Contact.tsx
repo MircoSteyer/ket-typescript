@@ -24,7 +24,7 @@ const Contact = () => {
     const classes = useStyles()
 
     return (
-        <>
+        <div id={"contact"}>
             <ComponentHeader title={"Kontakt"}/>
             <Typography align={"center"} gutterBottom>
                 Bei Rückfragen, können Sie uns gerne wie folgt kontaktieren.
@@ -60,7 +60,7 @@ const Contact = () => {
                     </Typography>
                 </Grid>
             </Grid>
-        </>
+        </div>
     );
 };
 

@@ -43,7 +43,7 @@ const CompanyInformation = () => {
     const classes = useStyles()
 
     return (
-        <div>
+        <div id={"about"}>
             <ComponentHeader title={""}/>
             <div className={classes.root}>
                 <Grid container className={classes.outerContainer}>

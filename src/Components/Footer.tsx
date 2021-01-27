@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <footer className={classes.footer}>
             <Typography variant="h6" align="center" gutterBottom>
-                Fußzeile
+                Fußzeile / Impressum
             </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
                 Hier würde vermutlich das Impressum landen, Copyright und keine Ahnung was noch.
