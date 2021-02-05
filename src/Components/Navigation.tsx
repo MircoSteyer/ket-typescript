@@ -1,8 +1,6 @@
 import React from 'react';
 import {makeStyles, createStyles, Theme} from "@material-ui/core/styles";
-import {Button, IconButton, Toolbar, Typography, AppBar, useScrollTrigger, Slide} from "@material-ui/core";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import {Link} from "react-router-dom";
+import {Button, Toolbar, AppBar, useScrollTrigger, Slide} from "@material-ui/core";
 import {HashLink} from "react-router-hash-link";
 
 const useStyles = makeStyles((theme: Theme) =>

@@ -1,12 +1,12 @@
-import React from 'react';
-import Button from '@material-ui/core/Button';
+import React, {useState} from 'react';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
 import {createStyles, makeStyles, Theme} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import AlbumCard from "./AlbumCard";
 import {albumContents} from "../content";
+import {AlbumCardContent, AlbumCardContentCategories} from "../Types";
 import ComponentHeader from "./ComponentHeader";
+import {Button} from "@material-ui/core";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -19,15 +19,27 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Album = () => {
 
+    const [shownAlbumContents, setShownAlbumContents] = useState<AlbumCardContent[]>(albumContents)
+
     const classes = useStyles();
+
+    const filterGallery = (albumCategory: AlbumCardContentCategories) => {
+        setShownAlbumContents(albumContents.filter(content => content.category === albumCategory))
+    }
 
     return (
         <React.Fragment>
             <main id={"gallery"}>
                 <ComponentHeader title={"Gallerie"}/>
-                <Container className={classes.cardGrid} maxWidth="md">
+                <Grid container justify={"center"}>
+                    <Button color={"primary"} onClick={() => filterGallery(AlbumCardContentCategories.RundUmsHaus)}>Rund ums Haus</Button>
+                    <Button color={"primary"} onClick={() => filterGallery(AlbumCardContentCategories.Kanalbau)}>Kanalbau</Button>
+                    <Button color={"primary"} onClick={() => filterGallery(AlbumCardContentCategories.Außenanlagen)}>Außenanlagen</Button>
+                    <Button color={"primary"} onClick={() => filterGallery(AlbumCardContentCategories.Erdarbeiten)}>Erdarbeiten</Button>
+                </Grid>
+                <Container className={classes.cardGrid} maxWidth="lg">
                     <Grid container spacing={4}>
-                        <AlbumCard albumContents={albumContents}/>
+                        <AlbumCard albumContents={shownAlbumContents}/>
                     </Grid>
                 </Container>
             </main>

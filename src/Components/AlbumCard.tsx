@@ -4,8 +4,6 @@ import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import CardActions from "@material-ui/core/CardActions";
-import Button from "@material-ui/core/Button";
 import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
 import {AlbumCardContent} from "../Types";
 
@@ -40,12 +38,12 @@ const AlbumCard: React.FC<AlbumCardProps> = ({albumContents}) => {
     return (
         <>
             {albumContents.map(card => (
-                <Grid item key={card.id} xs={12} sm={6} md={4}>
+                <Grid item key={card.id} xs={12} sm={6} md={3}>
                     <Card className={classes.card}>
                         <CardMedia
                             className={classes.cardMedia}
                             image={card.media}
-                            title="Image title"
+                            title={card.heading}
                         />
                         <CardContent className={classes.cardContent}>
                             <Typography gutterBottom variant="h5" component="h2">

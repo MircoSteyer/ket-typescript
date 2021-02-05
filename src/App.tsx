@@ -1,5 +1,5 @@
 import React from 'react';
-import {CssBaseline, Divider, MuiThemeProvider, Typography} from "@material-ui/core";
+import {CssBaseline, Divider, MuiThemeProvider} from "@material-ui/core";
 import {theme} from "./theme";
 import Navigation from "./Components/Navigation";
 import Album from "./Components/Album";
