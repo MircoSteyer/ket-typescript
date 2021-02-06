@@ -4,7 +4,7 @@ import {theme} from "./theme";
 import Navigation from "./Components/Navigation";
 import Album from "./Components/Album";
 import ImageCarousel from "./Components/ImageCarousel";
-import {albumContents} from "./content";
+import {imageCarouselItems} from "./content";
 import CompanyFeatures from "./Components/CompanyFeatures";
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
@@ -19,7 +19,7 @@ function App() {
                 <BrowserRouter>
                     <CssBaseline/>
                     <Navigation/>
-                    <ImageCarousel albumCards={albumContents}/>
+                    <ImageCarousel/>
                     <CompanyInformation/>
                     <Divider variant={"middle"}/>
                     <CompanyFeatures/>

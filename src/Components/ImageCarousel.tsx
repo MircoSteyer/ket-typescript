@@ -1,17 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Carousel from "react-material-ui-carousel";
 import {AlbumCardContent} from "../Types"
 import ImageCarouselItem from "./ImageCarouselItem";
+import {imageCarouselItems} from "../content";
 
-type CarouselProps = {
-    albumCards: AlbumCardContent[]
-}
+/*type CarouselProps = {
+    imageCarouselItems: AlbumCardContent[]
+}*/
 
-const ImageCarousel: React.FC<CarouselProps> = ({albumCards}) => {
+const ImageCarousel = () => {
+
+    const [shownImageCarouselItems, setShownImageCarouselItems] = useState<AlbumCardContent[]>(imageCarouselItems)
+
     return (
-        <Carousel autoPlay={true} indicators={false} >
+        <Carousel autoPlay={false} indicators={false} >
             {
-                albumCards.map( (card, i) => <ImageCarouselItem key={i} card={card} /> )
+                shownImageCarouselItems.map( (card) => <ImageCarouselItem key={card.id} card={card} /> )
             }
         </Carousel>
     );

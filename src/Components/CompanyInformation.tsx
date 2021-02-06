@@ -31,10 +31,10 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
     },
     nestedContainerOutside: {
 /*        border: "2px solid salmon",*/
-        padding: "8px 8px 8px 0px"
+/*        padding: "8px 8px 8px 0px"*/
     },
     nestedContainerInside: {
-        padding: "8px 8px 8px 0px"
+/*        padding: "8px 8px 8px 0px"*/
     }
 }))
 
@@ -57,7 +57,7 @@ const CompanyInformation = () => {
                             </Typography>
                         </Grid>
                         <Grid item container className={classes.insideGrid}>
-                            <Grid item container xs={6} className={classes.nestedContainerOutside}>
+                            <Grid item container xs={12} sm={6} className={classes.nestedContainerOutside}>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
                                     <Typography color={"primary"} variant={"h4"}>
                                         Kompetent
@@ -75,7 +75,7 @@ const CompanyInformation = () => {
                                     </Typography>
                                 </Grid>
                             </Grid>
-                            <Grid item container xs={6} className={classes.nestedContainerOutside}>
+                            <Grid item container xs={12} sm={6} className={classes.nestedContainerOutside}>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
                                     <Typography color={"primary"} variant={"h4"}>
                                         45+
@@ -97,8 +97,7 @@ const CompanyInformation = () => {
                     </Grid>
                     <Grid container item xs={12} md={6} className={classes.columnGrid} direction={"column"} justify={"space-between"} >
                         <Grid item container className={classes.insideGrid}>
-                            {/*<img src={logo} alt="Test" height={"100%"} width={"100%"}/>*/}
-                            <img src="static/images/logo.jpg" height={"100%"} width={"100%"} alt="Hier sollte eigentlich unser Logo stehen. Scheint, als wäre etwas schief gelaufen."/>
+                            <img src={`${process.env.PUBLIC_URL}/static/images/logo.jpg`} height={"100%"} width={"100%"} alt="Hier sollte eigentlich unser Logo stehen. Scheint, als wäre etwas schief gelaufen."/>
                         </Grid>
                         <Grid item container className={classes.insideGrid}>
                             <Typography color={"primary"} variant={"h3"} gutterBottom>

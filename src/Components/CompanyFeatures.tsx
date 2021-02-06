@@ -5,13 +5,11 @@ import ComponentHeader from "./ComponentHeader";
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
     box: {
-        height: 400,
-        width: 250,
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
-        margin: 2
+/*        border: "3px solid"*/
     },
     root: {
 /*        border: "3px solid",*/
@@ -36,17 +34,16 @@ const CompanyFeatures = () => {
         <>
             <div className={classes.root}>
                 <ComponentHeader title={"Angebot"}/>
-                <Grid container justify={"center"}>
+                <Grid container justify={"center"} spacing={4}>
                     <Grid container item xs={12} sm={6} md={3} justify={"space-evenly"}>
-                        <Grid item className={classes.box}>
+                        <Grid container item className={classes.box}>
                             <LocalShippingIcon color={"primary"} fontSize={"large"}/>
                             <Typography variant={"h4"} gutterBottom>
-                                Rund ums Haus
+                                Ums Haus
                             </Typography>
                             <Typography align={"center"}>
                                 Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
                                 dass man sich kurz und prägnant auf die Kernangebote des Unternehmens fokussiert.
-                                Hier dann entsprechend vermutlich Kanal- Erd- und Tiefbau oder ein entsprechendes Angebot drum herum.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -58,8 +55,6 @@ const CompanyFeatures = () => {
                             </Typography>
                             <Typography align={"center"}>
                                 Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
-                                dass man sich kurz und prägnant auf die Kernangebote des Unternehmens fokussiert.
-                                Hier dann entsprechend vermutlich Kanal- Erd- und Tiefbau oder ein entsprechendes Angebot drum herum.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -84,8 +79,7 @@ const CompanyFeatures = () => {
                             </Typography>
                             <Typography align={"center"}>
                                 Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
-                                dass man sich kurz und prägnant auf die Kernangebote des Unternehmens fokussiert.
-                                Hier dann entsprechend vermutlich Kanal- Erd- und Tiefbau oder ein entsprechendes Angebot drum herum.
+                                dass man sich kurz und prägnant auf die...
                             </Typography>
                         </Grid>
                     </Grid>

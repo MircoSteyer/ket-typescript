@@ -1,116 +1,133 @@
 import {AlbumCardContent} from "./Types";
 
+export const imageCarouselItems: AlbumCardContent[] = [
+    {
+        id: 1,
+        media: `${process.env.PUBLIC_URL}/static/images/ImageCarousel/Bodenaufbereitung 2.jpg`,
+        category: "Erdarbeiten",
+        heading: "Bodenaufbereitung",
+        description: "Description",
+    },
+    {
+        id: 2,
+        media: `${process.env.PUBLIC_URL}/static/images/ImageCarousel/Geländeregulierung.jpg`,
+        category: "Erdarbeiten",
+        heading: "Geländeregulierung",
+        description: "Description",
+    }
+]
+
 export const albumContents: AlbumCardContent[] = [
     {
         id: 1,
-        media: "static/images/Anschluss und Versorgungsträger-min.jpg",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Gründung1.jpg`,
         category: "Rund ums Haus",
         heading: "Gründung",
         description: "Wir verleihen Minibagger, bla bla bla"
     },
     {
         id: 2,
-        media: "static/images/Anschluss und Versorgungsträger 2-min-min.jpg",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Leitungsverlegung1.jpg`,
         category: "Rund ums Haus",
-        heading: "Überschrift 2",
+        heading: "Leitungsverlegung",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 3,
-        media: "static/images/Bodenaufbereitung 2-min.jpg",
+        media: "static/images/logo.jpg",
         category: "Rund ums Haus",
-        heading: "Überschrift 3",
+        heading: "Rigolen",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 4,
-        media: "static/images/Bodenaufbereitung-min.jpg",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Versorgungsträger1.jpg`,
         category: "Rund ums Haus",
-        heading: "Überschrift 4",
+        heading: "Versorgungsträger",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 5,
-        media: "static/images/Einfahrten 2-min.jpg",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Schmutzwasseranschluss1.jpg`,
         category: "Kanalbau",
-        heading: "Überschrift 5",
+        heading: "Schmutzwasseranschlüsse",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 6,
-        media: "static/images/Einfahrten-min.jpg",
+        media: "static/images/logo.jpg",
         category: "Kanalbau",
-        heading: "Überschrift 6",
+        heading: "Klein-Kläranlagen",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 7,
-        media: "static/images/Erdabtransport-min.jpg",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Zisternen1.jpg`,
         category: "Kanalbau",
-        heading: "Überschrift 7",
+        heading: "Zisternen",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 8,
-        media: "https://source.unsplash.com/random",
+        media: "static/images/logo.jpg",
         category: "Kanalbau",
-        heading: "Überschrift 8",
+        heading: "Regenwasserverlegung",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 9,
-        media: "https://source.unsplash.com/random",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Terrassen1.jpg`,
         category: "Außenanlagen",
-        heading: "Überschrift 9",
+        heading: "Terrassen",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 10,
-        media: "https://source.unsplash.com/random",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Einfahrten1.jpg`,
         category: "Außenanlagen",
-        heading: "Überschrift 10",
+        heading: "Einfahrten",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 11,
-        media: "https://source.unsplash.com/random",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Betonsteinverlegung1.jpg`,
         category: "Außenanlagen",
-        heading: "Überschrift 11",
+        heading: "Betonsteinverlegung",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 12,
-        media: "https://source.unsplash.com/random",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Stützmauern1.jpg`,
         category: "Außenanlagen",
-        heading: "Überschrift 12",
+        heading: "Stützmauern",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 13,
-        media: "https://source.unsplash.com/random",
+        media: "static/images/logo.jpg",
         category: "Erdarbeiten",
-        heading: "Überschrift 13",
+        heading: "Baugruben",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 14,
-        media: "https://source.unsplash.com/random",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Gräben1.jpg`,
         category: "Erdarbeiten",
-        heading: "Überschrift 14",
+        heading: "Gräben",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 15,
-        media: "https://source.unsplash.com/random",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Geländeregulierung1.jpg`,
         category: "Erdarbeiten",
-        heading: "Überschrift 15",
+        heading: "Geländeregulierung",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 16,
-        media: "https://source.unsplash.com/random",
+        media: `${process.env.PUBLIC_URL}/static/images/Gallery/Bodenaufbereitung2.jpg`,
         category: "Erdarbeiten",
-        heading: "Überschrift 16",
+        heading: "Bodenaufbereitung",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
 ]

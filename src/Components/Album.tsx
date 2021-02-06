@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Grid from '@material-ui/core/Grid';
 import {createStyles, makeStyles, Theme} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -16,6 +16,8 @@ const useStyles = makeStyles((theme: Theme) =>
         }
     }),
 )
+
+
 
 const Album = () => {
 

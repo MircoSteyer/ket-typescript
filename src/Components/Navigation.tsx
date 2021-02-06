@@ -48,13 +48,13 @@ const Navigation = () => {
             <HideOnScroll>
                 <AppBar className={classes.appBar}>
                     <Toolbar className={classes.toolBar}>
-                        <HashLink to={"#about"}>
+                        <HashLink to={"#about"} style={{textDecoration: "none", color:"inherit"}}>
                             <Button color="primary">ÜBER UNS</Button>
                         </HashLink>
-                        <HashLink to={"#gallery"}>
+                        <HashLink to={"#gallery"} style={{textDecoration: "none", color:"inherit"}}>
                             <Button color="primary">GALLERIE</Button>
                         </HashLink>
-                        <HashLink to={"#contact"}>
+                        <HashLink to={"#contact"} style={{textDecoration: "none", color:"inherit"}}>
                             <Button color="primary">KONTAKT</Button>
                         </HashLink>
                     </Toolbar>

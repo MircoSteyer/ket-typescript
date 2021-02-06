@@ -62,6 +62,7 @@ type CarouselItemProps = {
 const ImageCarouselItem: React.FC<CarouselItemProps> = ({card}) => {
 
     const classes = useStyles()
+    console.log("carouselitem is loading")
 
     return (
         <Card className={classes.card}>
@@ -69,20 +70,19 @@ const ImageCarouselItem: React.FC<CarouselItemProps> = ({card}) => {
                        image={card.media}/>
             <CardContent className={classes.cardContent}>
                 <Hidden smDown>
-                    <Typography gutterBottom variant="h2" component="h2" color={"primary"} align={"center"}>
-                        Willkommen bei KET
+                    <Typography gutterBottom variant="h2" component="h2" color={"textSecondary"} align={"center"}>
+                        {/*Willkommen bei KET*/}
                     </Typography>
                 </Hidden>
                 <Hidden xsDown>
                     <Typography align={"center"}>
                         {/*{card.description}*/}
-                        Die Bilder sind aktuell zufällig eingespielte Bilder. Es wird immer auf das selbe Bild wechseln. Wenn wir dann mal richtige Bilder einspielen, sollen es 6 Stück werden (selbe Bilder wie die 6 aus der Gallerie).
                     </Typography>
                 </Hidden>
             </CardContent>
             <CardActions className={classes.cardActions}>
-                <HashLink to={"#contact"}>
-                    <Button color={"primary"} variant={"outlined"}>
+                <HashLink to={"#contact"} style={{textDecoration: "none", color:"inherit"}}>
+                    <Button color={"primary"} variant={"contained"}>
                         Kontakt
                     </Button>
                 </HashLink>
