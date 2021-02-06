@@ -3,49 +3,49 @@ import {AlbumCardContent} from "./Types";
 export const albumContents: AlbumCardContent[] = [
     {
         id: 1,
-        media: "static/images/Zisternen.JPG",
+        media: "static/images/Anschluss und Versorgungsträger-min.jpg",
         category: "Rund ums Haus",
         heading: "Gründung",
         description: "Wir verleihen Minibagger, bla bla bla"
     },
     {
         id: 2,
-        media: "static/images/Gründungstestsharp16-9.jpg",
+        media: "static/images/Anschluss und Versorgungsträger 2-min-min.jpg",
         category: "Rund ums Haus",
         heading: "Überschrift 2",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 3,
-        media: "https://source.unsplash.com/random",
+        media: "static/images/Bodenaufbereitung 2-min.jpg",
         category: "Rund ums Haus",
         heading: "Überschrift 3",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 4,
-        media: "https://source.unsplash.com/random",
+        media: "static/images/Bodenaufbereitung-min.jpg",
         category: "Rund ums Haus",
         heading: "Überschrift 4",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 5,
-        media: "https://source.unsplash.com/random",
+        media: "static/images/Einfahrten 2-min.jpg",
         category: "Kanalbau",
         heading: "Überschrift 5",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 6,
-        media: "https://source.unsplash.com/random",
+        media: "static/images/Einfahrten-min.jpg",
         category: "Kanalbau",
         heading: "Überschrift 6",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
     },
     {
         id: 7,
-        media: "https://source.unsplash.com/random",
+        media: "static/images/Erdabtransport-min.jpg",
         category: "Kanalbau",
         heading: "Überschrift 7",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
