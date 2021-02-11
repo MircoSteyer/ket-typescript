@@ -34,7 +34,7 @@ export const albumContents: AlbumCardContent[] = [
     },
     {
         id: 3,
-        media: "static/images/logo.jpg",
+        media: `${process.env.PUBLIC_URL}/android-chrome-512x512.png`,
         category: "Rund ums Haus",
         heading: "Rigolen",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
@@ -55,7 +55,7 @@ export const albumContents: AlbumCardContent[] = [
     },
     {
         id: 6,
-        media: "static/images/logo.jpg",
+        media: `${process.env.PUBLIC_URL}/android-chrome-512x512.png`,
         category: "Kanalbau",
         heading: "Klein-Kläranlagen",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
@@ -69,7 +69,7 @@ export const albumContents: AlbumCardContent[] = [
     },
     {
         id: 8,
-        media: "static/images/logo.jpg",
+        media: `${process.env.PUBLIC_URL}/android-chrome-512x512.png`,
         category: "Kanalbau",
         heading: "Regenwasserverlegung",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."
@@ -104,7 +104,7 @@ export const albumContents: AlbumCardContent[] = [
     },
     {
         id: 13,
-        media: "static/images/logo.jpg",
+        media: `${process.env.PUBLIC_URL}/android-chrome-512x512.png`,
         category: "Erdarbeiten",
         heading: "Baugruben",
         description: "Das ist eine Bildkarte. Hier würde eine Beschreibung zum Bild stehen."

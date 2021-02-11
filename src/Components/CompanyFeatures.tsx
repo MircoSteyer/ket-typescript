@@ -42,8 +42,9 @@ const CompanyFeatures = () => {
                                 Ums Haus
                             </Typography>
                             <Typography align={"center"}>
-                                Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
-                                dass man sich kurz und prägnant auf die Kernangebote des Unternehmens fokussiert.
+                                Erdarbeiten mit Blick auf alle notwendigen Maßnahmen die anfallen werden und können, wie zum Beispiel
+                                Fundamentaushub, Herstellung von Baugruben, Entwässerung, Bodenbeschaffenheitsanalysen,
+                                Treffen von Vorbereitungsmaßnahmen und Durchführung von Gründungen.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -51,10 +52,11 @@ const CompanyFeatures = () => {
                         <Grid item className={classes.box}>
                             <LocalShippingIcon color={"primary"} fontSize={"large"}/>
                             <Typography variant={"h4"} gutterBottom>
-                                Erdbau
+                                Kanalbau
                             </Typography>
                             <Typography align={"center"}>
-                                Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
+                                Bauen sie auf unsere Erfahrungen mit der Herstellung von Ver- und Entsorgungsleitungen,
+                                beginnend vom Haus bis zur Grundstücksgrenze.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -62,12 +64,12 @@ const CompanyFeatures = () => {
                         <Grid item className={classes.box}>
                             <LocalShippingIcon color={"primary"} fontSize={"large"}/>
                             <Typography variant={"h4"} gutterBottom>
-                                Tiefbau
+                                Außenanlagen
                             </Typography>
                             <Typography align={"center"}>
-                                Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
-                                dass man sich kurz und prägnant auf die Kernangebote des Unternehmens fokussiert.
-                                Hier dann entsprechend vermutlich Kanal- Erd- und Tiefbau oder ein entsprechendes Angebot drum herum.
+                                Wir übernehmen die Gestaltung Ihrer Außenanlagen, bzgl. Pflasterarbeiten von Einfahrten, Zuwegungen,
+                                Terrassen und Hauseingänge. Pflasterarbeiten sollen nicht nur optisch ansprechend, sondern auch
+                                pflegeleicht sein. Wir helfen beim verschönern Ihrer Grundstücke.
                             </Typography>
                         </Grid>
                     </Grid>
@@ -75,11 +77,10 @@ const CompanyFeatures = () => {
                         <Grid item className={classes.box}>
                             <LocalShippingIcon color={"primary"} fontSize={"large"}/>
                             <Typography variant={"h4"} gutterBottom>
-                                Tiefbau
+                                Erdarbeiten
                             </Typography>
                             <Typography align={"center"}>
-                                Hier stehen Informationen zu den von euch angebotenen Services. Die Dreiteilung soll dafür sorgen,
-                                dass man sich kurz und prägnant auf die...
+                                Ob kleinere Erdarbeiten oder größere – für unsere Firma kein Problem!
                             </Typography>
                         </Grid>
                     </Grid>

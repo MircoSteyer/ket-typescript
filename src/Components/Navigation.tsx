@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {makeStyles, createStyles, Theme} from "@material-ui/core/styles";
 import {Button, Toolbar, AppBar, useScrollTrigger, Slide} from "@material-ui/core";
 import {HashLink} from "react-router-hash-link";
@@ -31,10 +31,10 @@ interface Props {
 
 function HideOnScroll({children}: Props) {
 
-    const trigger = useScrollTrigger();
+    const trigger = useScrollTrigger({threshold: -10});
 
     return (
-        <Slide appear={false} direction="down" in={!trigger}>
+        <Slide appear={true} direction="down" in={!trigger}>
             {children}
         </Slide>
     );
@@ -42,6 +42,8 @@ function HideOnScroll({children}: Props) {
 
 const Navigation = () => {
     const classes = useStyles()
+
+    const [isShown, setIsShown] = useState(false)
 
     return (
         <React.Fragment>

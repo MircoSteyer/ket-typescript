@@ -34,7 +34,11 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
 /*        padding: "8px 8px 8px 0px"*/
     },
     nestedContainerInside: {
-/*        padding: "8px 8px 8px 0px"*/
+        padding: "8px 8px 8px 0px"
+    },
+    logo: {
+/*        border: "1px solid green",*/
+        padding: 0
     }
 }))
 
@@ -50,54 +54,55 @@ const CompanyInformation = () => {
                     <Grid container item xs={12} md={6} className={classes.columnGrid} direction={"column"} justify={"space-between"}>
                         <Grid item container className={classes.insideGrid}>
                             <Typography color={"primary"} variant={"h3"} gutterBottom>
-                                Wir baggern alles.
+                                Sie geben uns den Auftrag. Wir erledigen es!
                             </Typography>
                             <Typography variant={"h6"}>
-                                Sie geben uns den Auftrag. Wir erledigen es!
+                                Sie haben Tiefbaubedarfe rund ums Haus? Sind Sie auf der Suche
+                                nach Unterstützung für Kanal-, Wege- oder Erdarbeiten? Dann sind wir ihr richtiger Ansprechpartner.
                             </Typography>
                         </Grid>
                         <Grid item container className={classes.insideGrid}>
                             <Grid item container xs={12} sm={6} className={classes.nestedContainerOutside}>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
                                     <Typography color={"primary"} variant={"h4"}>
-                                        Kompetent
+                                        Zuverlässig
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        300 + Irgendetwas. Überlegt euch irgendwelche Kennzahlen, aber haltet den Text kurz.
+                                        Wir setzen, das was ausgemacht ist auch um! Keine bösen Überraschungen.
                                     </Typography>
                                 </Grid>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
                                     <Typography color={"primary"} variant={"h4"}>
-                                        Zuverlässig
+                                        Kompetent
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        12 + Irgendetwas. Überlegt euch irgendwelche Kennzahlen, aber haltet den Text kurz.
+                                        Sie benötigen eine fachkundige Beratung, dann sind Sie genau richtig bei uns
                                     </Typography>
                                 </Grid>
                             </Grid>
                             <Grid item container xs={12} sm={6} className={classes.nestedContainerOutside}>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
                                     <Typography color={"primary"} variant={"h4"}>
-                                        45+
+                                        Individuell
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        45 + Irgendetwas. Überlegt euch irgendwelche Kennzahlen, aber haltet den Text kurz.
+                                        Bevor ein neues Bauwerk entstehen kann, nehmen für uns Zeit für Ihre Bedarfe.
                                     </Typography>
                                 </Grid>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
                                     <Typography color={"primary"} variant={"h4"}>
-                                        99%
+                                        Erfahrung
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        99% Irgendetwas. Überlegt euch irgendwelche Kennzahlen, aber haltet den Text kurz.
+                                        Erfahrene Arbeitskräfte für eine planmäßige und schnelle Erfüllung Ihrer Aufträge!
                                     </Typography>
                                 </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid container item xs={12} md={6} className={classes.columnGrid} direction={"column"} justify={"space-between"} >
-                        <Grid item container className={classes.insideGrid}>
-                            <img src={`${process.env.PUBLIC_URL}/static/images/logo.jpg`} height={"100%"} width={"100%"} alt="Hier sollte eigentlich unser Logo stehen. Scheint, als wäre etwas schief gelaufen."/>
+                        <Grid item container className={classes.logo}>
+                            <img src={`${process.env.PUBLIC_URL}/static/images/KET Logo SVG.svg`} height={"100%"} width={"100%"} alt="Hier sollte eigentlich unser Logo stehen. Scheint, als wäre etwas schief gelaufen."/>
                         </Grid>
                         <Grid item container className={classes.insideGrid}>
                             <Typography color={"primary"} variant={"h3"} gutterBottom>
@@ -105,6 +110,7 @@ const CompanyInformation = () => {
                             </Typography>
                             <Typography variant={"h6"}>
                                 Ein zuverlässiger Regionalpartner an ihrer Seite!
+                                Kontaktieren Sie uns einfach bezüglich Ihrer Bedarfe und Planen Sie mit uns die Umsetzung Ihrer Wünsche.
                             </Typography>
                             {/*<Typography variant={"h6"}>
                                 Vielleicht noch was cooles, warum der Kunde davon profitiert, zu uns zu kommen. Was weiß denn ich.

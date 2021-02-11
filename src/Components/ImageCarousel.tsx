@@ -13,7 +13,7 @@ const ImageCarousel = () => {
     const [shownImageCarouselItems, setShownImageCarouselItems] = useState<AlbumCardContent[]>(imageCarouselItems)
 
     return (
-        <Carousel autoPlay={false} indicators={false} >
+        <Carousel autoPlay={true} indicators={false} >
             {
                 shownImageCarouselItems.map( (card) => <ImageCarouselItem key={card.id} card={card} /> )
             }
