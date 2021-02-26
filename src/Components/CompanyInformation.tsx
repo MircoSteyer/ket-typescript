@@ -86,7 +86,7 @@ const CompanyInformation = () => {
                                         Individuell
                                     </Typography>
                                     <Typography color={"primary"}>
-                                        Bevor ein neues Bauwerk entstehen kann, nehmen für uns Zeit für Ihre Bedarfe.
+                                        Bevor ein neues Bauwerk entstehen kann, nehmen wir uns Zeit für Ihre Bedarfe.
                                     </Typography>
                                 </Grid>
                                 <Grid item container className={classes.nestedContainerInside} direction={"column"}>
