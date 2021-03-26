@@ -67,7 +67,7 @@ const Footer = () => {
                             <br/>
                             Handelsregister-Nr.: HRA 18586
                             <br/>
-                            USt.id.Nr.: DE 328624166
+                            USt.id.Nr.: DE328624166
                             <br/>
                             Info §34i GewO
                         </Typography>
