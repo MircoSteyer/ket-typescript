@@ -23,8 +23,8 @@ function App() {
                     <CompanyInformation/>
                     <Divider variant={"middle"}/>
                     <CompanyFeatures/>
-                    <Divider variant={"middle"}/>
-                    <Album/>
+                    {/*<Divider variant={"middle"}/>
+                    <Album/>*/}
                     <Divider variant={"middle"}/>
                     <Contact/>
                     <Divider variant={"middle"}/>
