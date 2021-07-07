@@ -91,7 +91,7 @@ const Footer = () => {
                             <br/>
                             Leipziger Volksbank
                             <br/>
-                            IBAN: DE
+                            IBAN: DE 53 8609 5604 0307 4483 94
                             <br/>
                             BIC: GENODEF1LVB
                         </Typography>
